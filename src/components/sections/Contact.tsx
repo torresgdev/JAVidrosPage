@@ -1,6 +1,6 @@
 "use client"
 import React, {useState} from "react";
-import { FaPhone, FaEnvelope, FaMapMarkedAlt, FaWhatsapp } from "react-icons/fa";
+import {FaEnvelope, FaMapMarkedAlt, FaWhatsapp } from "react-icons/fa";
 
 const Contact = () => {
     const [name, setName] = useState('')
@@ -38,7 +38,7 @@ const Contact = () => {
                         <h3 className="text-3xl font-bold mb-6">Informações de Contato</h3>
                         <ul className="space-y-4 text-lg">
                             <li className="flex items-center">
-                                <FaPhone className="mr-3 text-blue-300" /> (XX) XXXX-XXXX (WhatsApp)
+                                <FaWhatsapp className="mr-3 text-blue-300" /> (XX) XXXX-XXXX (WhatsApp)
                             </li>
                             <li className="flex items-center">
                                 <FaEnvelope className="mr-3 text-blue-300" /> contato@email.com

@@ -9,7 +9,7 @@ const Hero = () => {
                 fill
                 className="brightness-50 object-cover"/>
 
-            <div className="relative z-10 p-8 bg-black bg-opacity-40 rounded-lg max-w-3xl mx-auto shadow-xl">
+            <div className="relative z-10 p-8 bg-black bg-opacity-10 rounded-lg max-w-3xl mx-auto shadow-xl">
                 <h1 className="text-5xl md:text-6xl font-extrabold mb-4 leading-tight">Especialistas em Estruturas Metálicas e Vidros</h1>
 
                 <p className="text-xl md:tex-2xl mb-8 opacity-90">Qualidade, Segurança e Inovação para seu Projeto.</p>
