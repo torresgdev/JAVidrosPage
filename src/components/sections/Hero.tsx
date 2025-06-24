@@ -4,7 +4,7 @@ const Hero = () => {
     return (
         <section className="realative h-screen flex items-center justify-center text-white text-center overflow-hidden">
             <Image 
-                src=".././public/images/header_glass.jpg"
+                src="/images/header_glass.jpg"
                 alt="Estruturas metálicas e instalação de vidros" // Busca do SEO
                 layout="fill"
                 objectFit="cover"
