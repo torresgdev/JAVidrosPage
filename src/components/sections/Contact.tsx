@@ -1,3 +1,4 @@
+"use client"
 import React, {useState} from "react";
 import { FaPhone, FaEnvelope, FaMapMarkedAlt, FaWhatsapp } from "react-icons/fa";
 
@@ -85,7 +86,7 @@ const Contact = () => {
                                     id="message"
                                     rows={5}
                                     className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focis:ring-2 focus:ring-blue-500"
-                                    value={name}
+                                    value={message}
                                     onChange={(e) => setMessage(e.target.value)} 
                                     required
                                     />

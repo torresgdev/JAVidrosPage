@@ -6,11 +6,8 @@ const Hero = () => {
             <Image 
                 src="/images/header_glass.jpg"
                 alt="Estruturas metálicas e instalação de vidros" // Busca do SEO
-                layout="fill"
-                objectFit="cover"
-                quality={80}
-                priority
-                className="brightness-50"/>
+                fill
+                className="brightness-50 object-cover"/>
 
             <div className="relative z-10 p-8 bg-black bg-opacity-40 rounded-lg max-w-3xl mx-auto shadow-xl">
                 <h1 className="text-5xl md:text-6xl font-extrabold mb-4 leading-tight">Especialistas em Estruturas Metálicas e Vidros</h1>
