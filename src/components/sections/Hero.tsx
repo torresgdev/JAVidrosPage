@@ -1,6 +1,7 @@
 "use client"
 import Image from "next/image";
 import {  easeOut, motion } from "framer-motion";
+import WhatsAppButton from "../ui/WhatsappButton";
 
 const Hero = () => {
 
@@ -18,6 +19,9 @@ const Hero = () => {
         hidden: { opacity: 0, scale: 0.8},
         visible: { opacity: 1, scale: 1, transition: { delay: 0.6, duration: 0.5, ease: easeOut}  }
     }
+
+    const phoneNumber = ''; 
+    const initialMessage = 'Olá! Gostaria de um orçamento para estruturas metálicas e vidros.';
 
     return (
         <section className="realative h-screen flex items-center justify-center text-white text-center overflow-hidden">
@@ -38,14 +42,18 @@ const Hero = () => {
                     initial="hidden"
                     animate="visible">Qualidade, Segurança e Inovação para seu Projeto.</motion.p>
                 
-
-                <motion.a href="#contato"
-                    className="inline-block bg-blue-600 hover:gb-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg trasition-all duration-300 transform hover:scale-105 shadow-lg"
+                <motion.div
                     variants={buttonVariants}
-                    initial="hidden"
-                    animate="visible">
-                        Solicite um Orçamento Agora !
-                    </motion.a>
+                        initial="hidden"
+                        animate="visible"
+                    >
+                        <WhatsAppButton
+                        phoneNumber={phoneNumber}
+                        message={initialMessage}
+                        className="inline-block font-bold py-4 text-lg">
+                            Solicite um Orçamento Agora!
+                        </WhatsAppButton>
+                </motion.div>
             </div>
         </section>
     )
